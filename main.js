@@ -3,12 +3,14 @@ import { Cart } from "./Cart.js";
 import { Search } from "./Search.js";
 import { Error } from "./Error.js";
 
+
 const Shop = {
   components: {
     Products,
     Cart,
     Search,
     Error,
+
   },
   data() {
     return {

@@ -47,10 +47,7 @@
  .products {
    column-gap: 30px;
    display: grid;
-   grid-template-columns: repeat(auto-fit, 200px);
-   grid-template-rows: 1fr;
-   padding: 40px 80px;
-   justify-content: space-between;
+
  }
 
  p {
@@ -133,16 +130,18 @@
 
  .product-bio {
    display: flex;
+n
  }
 
  .cart-item {
    align-self: flex-start;
    margin-right: 15px;
+
  }
 
  .product-single-price {
    color: #474747;
-   font-size: 0.5em;
+
  }
 
  .product-price {
@@ -150,16 +149,17 @@
  }
 
  .product-desc {
-   max-width: 150px;
+
  }
 
  .product-quantity {
    margin-top: 15px;
-   font-size: 0.75em;
+
  }
 
  .right-block {
    text-align: right;
+
  }
 
  .btn-search {
@@ -219,4 +219,5 @@
    border: none;
    color: white;
    font-weight: bold;
+
  }
