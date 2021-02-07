@@ -3,15 +3,23 @@ import { Product } from "./Product.js";
 export const Products = {
     inject: ['API', 'getJson'],
     components: {
+<<<<<<< HEAD
         Product,
         // Footer,
+=======
+
+>>>>>>> main
     },
     data() {
         return {
             catalogUrl: '/catalogData.json',
             products: [],
+<<<<<<< HEAD
             imgCatalog: 'imgs/',
             // imgCatalog: 'https://placehold.it/200x150',
+=======
+
+>>>>>>> main
         }
     },
     computed: {
@@ -29,6 +37,7 @@ export const Products = {
                     this.products.push(product);
                 }
             });
+<<<<<<< HEAD
         this.$root.getJson(`getProducts.json`)
             .then(data => {
                 if (!data) {
@@ -38,6 +47,9 @@ export const Products = {
                     this.products.push(product);
                 }
             });
+=======
+
+>>>>>>> main
     },
     template: ` <div class="products">
                     <Product v-for="el of filtered" 

@@ -4,7 +4,11 @@ export const Product = {
                     <img :src="img + product.product_name + '.jpg'" :alt="product.product_name">
                     <div class="desc">
                         <h3>{{ product.product_name }}</h3>
+<<<<<<< HEAD
                         <p>{{ product.price }} &#8381</p>
+=======
+
+>>>>>>> main
                         <button class="buy-btn" @click="$root.$refs.basket.addProduct(product)">Купить</button>
                     </div>
                 </div>`

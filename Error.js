@@ -15,4 +15,8 @@ export const Error = {
                     {{ textEr }}
                     </p>
                 </div>`
+<<<<<<< HEAD
 }
+=======
+<
+>>>>>>> main

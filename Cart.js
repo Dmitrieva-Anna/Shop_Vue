@@ -7,11 +7,15 @@ export const Cart = {
     },
     data() {
         return {
+<<<<<<< HEAD
             cartSum: 0,
             cartUrl: '/getBasket.json',
             cartItems: [],
             imgCart: 'imgs/',
             // imgCart: 'https://placehold.it/75x100',
+=======
+
+>>>>>>> main
             cartVisibility: false,
         }
     },
@@ -26,11 +30,15 @@ export const Cart = {
                         let find = this.cartItems.find(el => el.id_product === product.id_product);
                         if (find) {
                             find.quantity++;
+<<<<<<< HEAD
                             this.cartSum += find.price;
                         } else {
                             let addedProduct = Object.assign({ quantity: 1, }, product);
                             this.cartItems.push(addedProduct);
                             this.cartSum += addedProduct.price;
+=======
+
+>>>>>>> main
                         }
                     }
                 })
@@ -41,15 +49,20 @@ export const Cart = {
                     if (data.result) {
                         if (product.quantity > 1) {
                             product.quantity--;
+<<<<<<< HEAD
                             this.cartSum -= product.price;
                         } else {
                             this.cartItems.splice(this.cartItems.indexOf(product), 1);
                             this.cartSum -= product.price;
+=======
+<<<
+>>>>>>> main
                         }
                     }
                 });
         },
     },
+<<<<<<< HEAD
     /** Слуйчай, если товары уже лежат в корзине */
     // mounted() {   // получить данные с сервера и добавить их в соотв. массивы товаров
     //     this.$root.getJson(`${this.API + this.cartUrl}`)
@@ -73,6 +86,9 @@ export const Cart = {
                             @removeProduct="removeProduct">
                         </CartItem>
                         <div class="cart-sum">Итого: {{this.cartSum}} &#8381</div>
+=======
+
+>>>>>>> main
                     </div>
                 </div>`
 } 
