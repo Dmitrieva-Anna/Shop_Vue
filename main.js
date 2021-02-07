@@ -2,7 +2,7 @@ import { Products } from "./Products.js";
 import { Cart } from "./Cart.js";
 import { Search } from "./Search.js";
 import { Error } from "./Error.js";
-import { Basement } from "./Basement.js";
+
 
 const Shop = {
   components: {
@@ -10,7 +10,7 @@ const Shop = {
     Cart,
     Search,
     Error,
-    Basement,
+
   },
   data() {
     return {

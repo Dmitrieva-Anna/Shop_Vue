@@ -47,11 +47,7 @@
  .products {
    column-gap: 30px;
    display: grid;
-   grid-template-columns: repeat(auto-fit, 400px);
-   grid-template-rows: 1fr;
-   padding: 40px 80px;
-   justify-items: center;
-   justify-content: center;
+
  }
 
  p {
@@ -134,19 +130,18 @@
 
  .product-bio {
    display: flex;
-   justify-content: space-between;
+n
  }
 
  .cart-item {
    align-self: flex-start;
    margin-right: 15px;
-   width: 100px;
-   height: 75px;
+
  }
 
  .product-single-price {
    color: #474747;
-   font-size: 0.8em;
+
  }
 
  .product-price {
@@ -154,17 +149,17 @@
  }
 
  .product-desc {
-   min-width: 105px;
+
  }
 
  .product-quantity {
    margin-top: 15px;
-   font-size: 0.8em;
+
  }
 
  .right-block {
    text-align: right;
-   min-width: 99px;
+
  }
 
  .btn-search {
@@ -224,216 +219,5 @@
    border: none;
    color: white;
    font-weight: bold;
- }
 
- .footer_main {
-   background-color: #2f2a2d;
-   width: 100%;
-   min-height: 50px;
- }
-
- .footer-form {
-   box-sizing: border-box;
- }
-
- .footer-title-contacts {
-   padding: 53px 0 31px 0;
- }
-
- .footer-title {
-   text-align: center;
-   text-transform: uppercase;
-   font-weight: bold;
-   line-height: 36px;
-   color: #ffffff;
- }
-
- .footer-form-send {
-   display: flex;
-   justify-content: space-around;
-   padding: 0 0 49px 0;
- }
-
- .main-form {
-   display: flex;
-   flex-direction: column;
-   margin: 0 25px 0 150px;
- }
-
- .title-form {
-   font-size: 16px;
-   line-height: 24px;
-   font-weight: 400;
-   color: #ffffff;
-   margin-bottom: 20px;
-   text-align: center;
- }
-
- .footer-list {
-   list-style-type: none;
-   flex-direction: column;
- }
-
- .title-list {
-   font-size: 16px;
-   line-height: 24px;
-   font-weight: 400;
-   color: #ffffff;
-   margin-bottom: 20px;
-   text-align: center;
- }
-
- .footer-list-item-skype {
-   font-size: 16px;
-   line-height: 24px;
-   font-weight: 400;
-   color: #ffffff;
-   position: relative;
-   padding-left: 7px;
- }
-
- .a-footer {
-   text-decoration: none;
-   color: #ffffff;
- }
-
- .a-footer:active {
-   color: yellowgreen;
- }
-
- .a-footer:hover {
-   color: blue;
- }
-
- .footer-list-item-skype::before {
-   content: " ";
-   display: block;
-   position: absolute;
-   width: 10px;
-   height: 10px;
-   top: 5px;
-   left: -13px;
-   background-image: url(imgs/skype_icon_319.png);
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
- }
-
- .footer-list-item-mail {
-   font-size: 16px;
-   line-height: 24px;
-   font-weight: 400;
-   color: #ffffff;
-   position: relative;
-   padding-left: 7px;
- }
-
- .footer-list-item-mail::before {
-   content: " ";
-   display: block;
-   position: absolute;
-   width: 10px;
-   height: 10px;
-   top: 5px;
-   left: -13px;
-   background-image: url(imgs/email_icon_332.png);
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
- }
-
- .footer-list-item-cell {
-   font-size: 16px;
-   line-height: 24px;
-   font-weight: 400;
-   color: #ffffff;
-   position: relative;
-   padding-left: 7px;
- }
-
- .footer-list-item-cell::before {
-   content: " ";
-   display: block;
-   position: absolute;
-   width: 10px;
-   height: 10px;
-   top: 5px;
-   left: -13px;
-   background-image: url(imgs/phone_icon_337.png);
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
- }
-
- .footer-but {
-   margin-top: 5px;
-   background-color: #fafafa;
-   padding: 5px 15px;
-   border: 1px solid transparent;
-   color: #2f2a2d;
-   border-radius: 5px;
-   transition: all ease-in-out .4s;
-   cursor: pointer;
- }
-
- .footer-but:focus {
-   border: 1px solid black;
- }
-
- .footer-but:hover {
-   background-color: #2f2a2d;
-   color: #fafafa;
-   border: 1px solid #fafafa;
- }
-
- .form {
-   width: 500px;
-   background-color: #ffffff;
-   margin: 0 0 11px 0;
-   border-radius: 10px;
-   font-family: ArialMT;
-   font-size: 16px;
-   line-height: 24px;
-   font-weight: 400;
-   color: #445162;
-   outline: none;
- }
-
- .title-social {
-   font-size: 16px;
-   line-height: 24px;
-   font-weight: 400;
-   color: #ffffff;
-   margin-bottom: 20px;
-   text-align: center;
- }
-
- .social {
-   width: 300px;
-   box-sizing: border-box;
-   display: flex;
-   padding-left: 25px;
- }
-
- .active-icon:hover {
-   -webkit-transform: scale(1.2);
-   -moz-transform: scale(1.2);
-   -o-transform: scale(1.2);
- }
-
- .icon {
-   fill: grey;
-   cursor: pointer;
-   width: 50px;
-   height: 40px;
- }
-
- .end-copy {
-   text-align: center;
-   color: #445162;
-   padding-top: 10px;
- }
-
- input {
-   display: block;
  }
