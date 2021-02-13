@@ -7,6 +7,7 @@ export const Cart = {
     },
     data() {
         return {
+
             cartSum: 0,
             cartUrl: '/getBasket.json',
             cartItems: [],
@@ -26,10 +27,12 @@ export const Cart = {
                         let find = this.cartItems.find(el => el.id_product === product.id_product);
                         if (find) {
                             find.quantity++;
+
                             this.cartSum += find.price;
                         } else {
                             let addedProduct = Object.assign({ quantity: 1, }, product);
                             this.cartItems.push(addedProduct);
+                            this.cartQuantity++;
                             this.cartSum += addedProduct.price;
                         }
                     }
@@ -41,10 +44,12 @@ export const Cart = {
                     if (data.result) {
                         if (product.quantity > 1) {
                             product.quantity--;
+
                             this.cartSum -= product.price;
                         } else {
                             this.cartItems.splice(this.cartItems.indexOf(product), 1);
                             this.cartSum -= product.price;
+
                         }
                     }
                 });
@@ -63,7 +68,7 @@ export const Cart = {
     //         });
     // },
     template: `  <div class="cart">
-                    <button @click="showCart()" class="btn-cart" type="button">Корзина</button>
+                    <button @click="showCart()" class="btn-cart" type="button">Корзина {{this.cartQuantity}}</button>
                     <div class="cart-block" v-show="cartVisibility">
                         <p v-if="!cartItems.length">Корзина пуста</p>
                         <CartItem v-for="item of cartItems"
@@ -75,4 +80,4 @@ export const Cart = {
                         <div class="cart-sum">Итого: {{this.cartSum}} &#8381</div>
                     </div>
                 </div>`
-} 
+}  

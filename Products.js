@@ -46,4 +46,4 @@ export const Products = {
                         :product="el">
                     </Product>
                 </div>`
-} 
+}
