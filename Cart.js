@@ -7,7 +7,7 @@ export const Cart = {
     },
     data() {
         return {
-
+            cartQuantity: 0,
             cartSum: 0,
             cartUrl: '/getBasket.json',
             cartItems: [],
@@ -27,7 +27,7 @@ export const Cart = {
                         let find = this.cartItems.find(el => el.id_product === product.id_product);
                         if (find) {
                             find.quantity++;
-
+                            this.cartQuantity++;
                             this.cartSum += find.price;
                         } else {
                             let addedProduct = Object.assign({ quantity: 1, }, product);
@@ -44,12 +44,12 @@ export const Cart = {
                     if (data.result) {
                         if (product.quantity > 1) {
                             product.quantity--;
-
+                            this.cartQuantity--;
                             this.cartSum -= product.price;
                         } else {
                             this.cartItems.splice(this.cartItems.indexOf(product), 1);
                             this.cartSum -= product.price;
-
+                            this.cartQuantity--;
                         }
                     }
                 });
